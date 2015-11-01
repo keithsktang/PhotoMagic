@@ -15,10 +15,24 @@
     <%= f.label :title %><br>
     <%= f.text_field :title %>
   </div>
-  <div class="field">
-    <%= f.label :album %><br>
-    <%= f.text_field :album %>
+  <div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Album
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Halloween</a></li>
+    <li><a href="#">Thanksgiving</a></li>
+    <li><a href="#">Christmas</a></li>
+    <li><a href="#">New Year</a></li>
+  </ul>
+</div>
+  <%if false%>
+   <div class="field">
+     <%= f.label :album %><br>
+     <%= f.text_field :album %>
   </div>
+  <% end %>
   <div class="field">
     <%= f.label :url %><br>
     <%= f.text_field :url %>

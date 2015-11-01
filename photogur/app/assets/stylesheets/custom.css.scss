@@ -1,6 +1,17 @@
+html body {
+    background-color: black;
+    color: white;
+}
+
+body h1 {
+  color: white;
+}
+
 #square {
-  border : 2px solid black;
-  width : 150px;
-  height : 150px;
+  width : 250px;
+  height : 250px;
   margin: .5em;
+}
+#square img{
+  width : 100%;
 }
