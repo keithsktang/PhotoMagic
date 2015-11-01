@@ -1,19 +1,38 @@
 html body {
     background-color: black;
-    // background-image: url('/assets/1.jpg');
     color: white;
 }
-
-body h1 {
-  color: white;
-  font-family: zapfino;
+#show{
+  margin : 15vh auto 0 auto;
+  padding : 2vh auto 2vh auto;
 }
-
+nav.navbar{
+  background-color: black;
+  padding: 6vh 0 0 5vw;
+}
+nav .navbar-brand {
+  color: #ffffff !important;
+  font-family: zapfino;
+  font-size: 3em;
+}
+nav .navbar-head {
+  color: #ffffff !important;
+  font-family: Papyrus;
+  font-size: 3em;
+}
+.content{
+  padding: 12vh 0 0 0;
+}
+navbar-text{
+  color: #ffffff !important;
+  font-family: Papyrus;
+  font-size: 3em;
+}
 #square {
   border: 8px solid white;
-  width : 250px;
-  height : 250px;
-  margin: .5em;
+  width : 200px;
+  height : 200px;
+  margin: 5vh 5vw;
 }
 #square img{
   width : 100%;
@@ -69,10 +88,10 @@ body h1 {
     animation: titleAnimation 36s linear infinite 0s;
 }
 .cb-slideshow li div h3 {
-    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
-    font-size: 240px;
+    font-family: 'apple chancery', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5vw;
     padding: 0;
-    line-height: 200px;
+    line-height: 5vh;
 }
 .cb-slideshow li:nth-child(1) span {
     background-image: url('/assets/1.jpg')

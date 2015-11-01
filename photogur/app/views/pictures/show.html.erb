@@ -1,20 +1,26 @@
 <p id="notice"><%= notice %></p>
+<nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-head" href="#">
+        <%= @picture.title %>
+      </a>
+      <p class="navbar-text navbar-right">
+        <%= link_to 'Edit', edit_picture_path(@picture) %>
+        <%= link_to 'Back', pictures_path %>
+      </p>
+    </div>
+  </div>
+</nav>
+    <div class='row col-xs-12 show'>
 
-<p>
-  <strong>Title:</strong>
-  <%= @picture.title %>
-</p>
-
-<p>
+<!-- <p>
   <strong>Album:</strong>
   <%= @picture.album %>
+</p> -->
+
+<p id="show">
+  <%= image_tag @picture.url, size: "500" %>
 </p>
 
-<p>
-  <strong>Url:</strong>
-  <%= image_tag @picture.url, size: "320x240" %>
-</p>
-
-
-<%= link_to 'Edit', edit_picture_path(@picture) %> |
-<%= link_to 'Back', pictures_path %>
+</div>
