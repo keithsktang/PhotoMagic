@@ -1,31 +1,45 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <div class='row col-xs-12'>
+    <p id="notice"><%= notice %></p>
 
-<h1>Listing Pictures</h1>
+    <h1>Listing Pictures</h1>
+  </div>
+  <div class = "row">
+  <div id ="square" class = 'col-xs-2'></div>
+  <div id ="square" class = 'col-xs-2'></div>
+  <div id ="square" class = 'col-xs-2'></div>
+  <div id ="square" class = 'col-xs-2'></div>
+  <div id ="square" class = 'col-xs-2'></div>
+  <div id ="square" class = 'col-xs-2'></div>
+</div>
+  <div class='row col-xs-12'>
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Album</th>
+          <th>Url</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Album</th>
-      <th>Url</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+      <tbody>
+        <% @pictures.each do |picture| %>
+        <tr>
+          <td><%= picture.title %></td>
+          <td><%= picture.album %></td>
+          <td><%= link_to (image_tag (picture.url), size: "160x120"), picture%></td>
+          <!-- <td><%= link_to 'Show', picture %></td> -->
+          <!-- <td><%= link_to 'Edit', edit_picture_path(picture) %></td>
+          <td><%= link_to 'Delete', picture, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
 
-  <tbody>
-    <% @pictures.each do |picture| %>
-      <tr>
-        <td><%= picture.title %></td>
-        <td><%= picture.album %></td>
-        <td><%= link_to (image_tag (picture.url), size: "160x120"), picture%></td>
-        <!-- <td><%= link_to 'Show', picture %></td> -->
-        <td><%= link_to 'Edit', edit_picture_path(picture) %></td>
-        <td><%= link_to 'Delete', picture, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Picture', new_picture_path %>
+  <br>
+  <div class='row col-xs-12'>
+    <%= link_to 'New Picture', new_picture_path %>
+  </div>
+</div>
