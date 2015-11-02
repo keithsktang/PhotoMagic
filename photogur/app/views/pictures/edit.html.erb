@@ -4,3 +4,6 @@
 
 <%= link_to 'Show', @picture %> |
 <%= link_to 'Back', pictures_path %>
+<%= link_to 'Destroy', picture_path(@picture),           #JRD110215 added
+      method: :delete,
+      data: { confirm: 'Are you sure?' } %>
