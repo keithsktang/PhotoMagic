@@ -22,17 +22,22 @@ nav .navbar-head {
 }
 .content{
   padding: 12vh 0 0 0;
+  background-color: rgba(255,255,255,0.5);
+  border: solid;
 }
-navbar-text{
-  color: #ffffff !important;
-  font-family: Papyrus;
-  font-size: 3em;
+.navbar-text a{
+  text-decoration: none;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 2em;
 }
 #square {
+  display:inline;
   border: 8px solid white;
-  width : 200px;
-  height : 200px;
-  margin: 5vh 5vw;
+  width : 250px;
+  height : 250px;
+  margin: 2vh 1vw 2vh 1vw;
+  padding: 0 0 0 0;
 }
 #square img{
   width : 100%;
