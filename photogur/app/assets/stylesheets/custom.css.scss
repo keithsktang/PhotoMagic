@@ -2,6 +2,19 @@ html body {
     background-color: black;
     color: white;
 }
+
+.field #picture_title{      /*JRD110215*/
+	color: black;
+}
+.field #picture_url{
+	color: black;
+}
+.field #picture_caption{      /*JRD110215*/
+	color: black;
+}
+
+
+
 #show{
   margin : 15vh auto 0 auto;
   padding : 2vh auto 2vh auto;
