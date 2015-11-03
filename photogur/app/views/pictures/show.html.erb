@@ -4,6 +4,7 @@
     <div class="navbar-header">
       <div class="navbar-head">
         <%= @picture.title %>
+
         <p class="navbar-text navbar-right">
           <%= link_to 'Home <span class="glyphicon glyphicon-home"></span>   '.html_safe, pictures_path,  class: "top-nav" %>
           <%= link_to 'Edit <span class="glyphicon glyphicon-edit"></span>   '.html_safe, edit_picture_path(@picture),  class: "top-nav" %>
@@ -18,6 +19,7 @@
     <p >
       <%= image_tag @picture.url, size: "500", id: "show-pic" %>
     </p>
+>>>>>>> master
 
   </div>
 </div>
