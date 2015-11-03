@@ -3,21 +3,24 @@ html body {
     color: white;
 }
 
-.field #picture_title{      /*JRD110215*/
-	color: black;
-}
-.field #picture_url{
-	color: black;
-}
-.field #picture_caption{      /*JRD110215*/
-	color: black;
+.field, .actions{
+  color: black;
 }
 
+.content {
+  display: inline-flex;
+  margin : 12vh 0 0 0;
+  padding: 2vh auto;
+  // background-color: rgba(255,255,255,0.3);
+}
 
+#show-pic{
+  margin: 0 auto;
+}
 
-#show{
-  margin : 15vh auto 0 auto;
-  padding : 2vh auto 2vh auto;
+#show, {
+  margin: 0 auto;
+
 }
 nav.navbar{
   background-color: black;
@@ -33,19 +36,27 @@ nav .navbar-head {
   font-family: Papyrus;
   font-size: 3em;
 }
-.content{
-  padding: 12vh 0 0 0;
+.top-nav{
+  text-decoration: none;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 2em;
+  &:hover {
+    text-decoration: none;
+    color: #ffffff;
+    }
+    &:visited {
+      color: #ffffff;
+ }
 }
-navbar-text{
-  color: #ffffff !important;
-  font-family: Papyrus;
-  font-size: 3em;
-}
+
 #square {
-  border: 8px solid white;
-  width : 200px;
-  height : 200px;
-  margin: 5vh 5vw;
+  display:inline;
+  border: 8px solid black;
+  width : 250px;
+  height : 250px;
+  margin: 2vh 1vw 2vh 1vw;
+  padding: 0 0 0 0;
 }
 #square img{
   width : 100%;
@@ -100,11 +111,11 @@ navbar-text{
     -ms-animation: titleAnimation 36s linear infinite 0s;
     animation: titleAnimation 36s linear infinite 0s;
 }
-.cb-slideshow li div h3 {
+.cb-slideshow li div h4 {
     font-family: 'apple chancery', 'Arial Narrow', Arial, sans-serif;
-    font-size: 5vw;
+    font-size: 4vw;
     padding: 0;
-    line-height: 5vh;
+    line-height: 4vh;
 }
 .cb-slideshow li:nth-child(1) span {
     background-image: url('/assets/1.jpg')
