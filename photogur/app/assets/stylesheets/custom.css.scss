@@ -9,7 +9,7 @@ html body {
 
 .content {
   display: inline-flex;
-  margin : 12vh 0 0 0;
+  margin : 12vh auto;
   padding: 2vh auto;
   background-color: rgba(255,255,255,0.3);
 }
@@ -19,7 +19,7 @@ html body {
 }
 
 #show, {
-  margin: 12vh auto;
+  margin: 0 auto;
   text-decoration: none;
   color: #ffffff;
   font-family: Arial;
@@ -43,6 +43,7 @@ nav .navbar-head {
 }
 
 .top-nav{
+  padding: 0 1em 0 0;
   text-decoration: none;
   color: #ffffff;
   font-family: Arial;
