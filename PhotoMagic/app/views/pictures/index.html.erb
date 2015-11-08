@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+     <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+       <div class="container-fluid">
+         <div class="navbar-header">
+           <div class="navbar-brand">Photo Magic
+           </div>
+           <p class="navbar-text navbar-right">
+             <%= link_to'Add Image <span class="glyphicon glyphicon-cloud-upload"></span>'.html_safe, new_picture_path, class: "top-nav" %>
+           </p>
+         </div>
+       </div>
+     </nav>
+     <ul class="cb-slideshow">
+              <li><span>Image 01</span><div><h4>upload your photos</h4></div></li>
+              <li><span>Image 02</span></li>
+              <li><span>Image 03</span></li>
+              <li><span>Image 04</span></li>
+              <li><span>Image 05</span></li>
+              <li><span>Image 06</span></li>
+          </ul>
+
+
+    <div class='row'>
+      <!-- <div class='col-xs-1'></div> -->
+        <div class='col-xs-12 content'>
+          <div id="show" class="col-md-8">
+            <% @pictures.each do |picture| %>
+              <div id ="square" class='col-xs-2'>
+                <%= link_to (image_tag (picture.url)), picture%>
+              </div>
+             <% end %>
+            </div>
+        </div>
+      </div>

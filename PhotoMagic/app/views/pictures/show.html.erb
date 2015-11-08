@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+<nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div class="navbar-head">
+        <%= @picture.title %>
+
+        <p class="navbar-text navbar-right">
+          <%= link_to 'Home <span class="glyphicon glyphicon-home"></span>   '.html_safe, pictures_path,  class: "top-nav" %>
+          <%= link_to 'Edit <span class="glyphicon glyphicon-edit"></span>   '.html_safe, edit_picture_path(@picture),  class: "top-nav" %>
+          <%= link_to 'Delete <span class="glyphicon glyphicon-trash"></span>   '.html_safe, @picture, method: :delete, data: { confirm: 'Are you sure?' },  class: "top-nav" %>
+          <%= link_to'Add Image <span class="glyphicon glyphicon-cloud-upload"></span>'.html_safe, new_picture_path, class: "top-nav" %>
+        </p>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class='col-xs-12 content'>
+  <div class="col-md-8" id="show">
+    <p >
+      <%= image_tag @picture.url, size: "500", id: "show-pic" %>
+    </p>
+    <%= @picture.caption %>
+  </div>
+</div>
